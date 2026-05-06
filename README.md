@@ -4,6 +4,33 @@ The NeoVIM setup for a non-purist who largely uses VSCode but finds themselves e
 
 IT...uh... got out of hand pretty fast, and I'm sure someone will tell me Oh you should just use `whatever_tool` and do this in 3 lines, but whateves.
 
+## Quickstart
+
+```bash
+git clone https://github.com/psychicesp/vim_stuff.git
+cd nvim_stuff
+chmod +x bootstrap.sh
+./bootstrap.sh
+```
+
+Then either open a new shell or reload your shell config:
+
+```bash
+source ~/.bashrc
+```
+
+Start Neovim:
+
+```bash
+nvim
+```
+
+To re-run setup later:
+
+```bash
+./bootstrap.sh
+```
+
 ## What it does
 
 `./bootstrap.sh` will:
@@ -103,12 +130,9 @@ Inside Neovim:
 :Lazy update
 ```
 
-Then commit the changed lockfile:
+This repo intentionally does not commit `nvim/lazy-lock.json`.
 
-```bash
-git add nvim/lazy-lock.json
-git commit -m "Update Neovim plugins"
-```
+That keeps the repo more suitable as a public starter config. Each user can generate their own local lockfile after installing plugins.
 
 ## Notes on vendoring plugins
 

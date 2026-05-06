@@ -60,18 +60,12 @@ return {
   {
     "akinsho/toggleterm.nvim",
     version = "*",
-    keys = {
-      [[<C-`>]],
-      [[<leader>t]],
-    },
+    lazy = false,
     opts = {
       size = 15,
-      open_mapping = [[<C-`>]],
       direction = "horizontal",
       shade_terminals = false,
       start_in_insert = true,
-      insert_mappings = true,
-      terminal_mappings = true,
       persist_size = true,
       close_on_exit = true,
     },
