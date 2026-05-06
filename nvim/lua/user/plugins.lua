@@ -1,9 +1,4 @@
 return {
-  -- Detect tabstop/shiftwidth automatically from existing files.
-  {
-    "tpope/vim-sleuth",
-  },
-
   -- Surround text objects: ys, cs, ds.
   {
     "tpope/vim-surround",
@@ -81,3 +76,24 @@ return {
     lazy = false,
   },
 }
+
+-- VSCode-ish toggleable terminal.
+{
+  "akinsho/toggleterm.nvim",
+  version = "*",
+  keys = {
+    [[<C-`>]],
+    [[<leader>t]],
+  },
+  opts = {
+    size = 15,
+    open_mapping = [[<C-`>]],
+    direction = "horizontal",
+    shade_terminals = false,
+    start_in_insert = true,
+    insert_mappings = true,
+    terminal_mappings = true,
+    persist_size = true,
+    close_on_exit = true,
+  },
+},
