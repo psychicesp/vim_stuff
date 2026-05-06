@@ -49,5 +49,10 @@ map("v", "<A-S-Up>", "y`<Pgv", { desc = "Copy selection up" })
 map("v", "<A-S-Down>", "y`>pgv", { desc = "Copy selection down" })
 
 -- VSCode-ish terminal toggle.
+map("n", "<F12>", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
+map("i", "<F12>", "<Esc><cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
+map("t", "<F12>", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
+
 map("n", "<leader>t", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
+map("i", "<leader>t", "<Esc><cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
 map("t", "<leader>t", "<cmd>ToggleTerm<cr>", { desc = "Toggle terminal" })
