@@ -3,3 +3,4 @@
 *.swo
 *.tmp
 nvim/.netrwhist
+nvim/lazy-lock.json
