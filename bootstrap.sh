@@ -278,13 +278,8 @@ sync_plugins() {
     return 0
   fi
 
-  if [ -f "$NVIM_CONFIG_SRC/lazy-lock.json" ]; then
-    log "Restoring plugins from lazy-lock.json"
-    nvim --headless '+Lazy! restore' +qa
-  else
-    log "Installing plugins and creating lazy-lock.json"
-    nvim --headless '+Lazy! sync' +qa
-  fi
+  log "Installing or updating plugins"
+  nvim --headless '+Lazy! sync' +qa
 }
 
 main() {
